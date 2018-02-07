@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.rostyslav.IonicBuildTest" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>ionic-build-test</name>
+<widget id="com.rostyslav.IonicBuildTest" version="{{version}}" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>{{name}}</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="rostyslav@email">Rostyslav</author>
     <content src="index.html" />
@@ -19,6 +19,7 @@
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
+    <hook src="build/interpolateStaticResourcesHook.js" type="before_prepare" />
     <platform name="android">
         <allow-intent href="market:*" />
         <preference name="AndroidMinSdkVersion" value="23" />

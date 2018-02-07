@@ -1,0 +1,23 @@
+{
+  "scope": [
+    "config.xml"
+  ],
+  "dev": {
+    "name": "Slate Mobile (DEV)"
+  },
+  "ci": {
+    "name": "Slate Mobile (CI)"
+  },
+  "qa": {
+    "name": "Slate Mobile (QA)"
+  },
+  "uat": {
+    "name": "Slate Mobile (UAT)"
+  },
+  "hotfix": {
+    "name": "Slate Mobile (HF)"
+  },
+  "prod": {
+    "name": "Slate Mobile"
+  }
+}
