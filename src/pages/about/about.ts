@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { AppConfig } from '../../../config/app.config';
 
 @Component({
   selector: 'page-about',
   templateUrl: 'about.html'
 })
 export class AboutPage {
-
-  constructor(public navCtrl: NavController) {
-
+  appName: string;
+  environment: string;
+  constructor(private appConfig: AppConfig) {
+    this.appName = this.appConfig.appName;
+    this.environment = this.appConfig.environment;
   }
-
 }

@@ -1,15 +1,22 @@
 {
   "name": "ionic-build-test",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "",
+  "homepage": "",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
-    "build": "ionic-app-scripts build",
-    "lint": "ionic-app-scripts lint",
-    "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve"
+    "build.ci": "NODE_ENV=ci ionic-app-scripts build --aot",
+    "build.qa": "NODE_ENV=qa ionic-app-scripts build --aot",
+    "build.prod": "NODE_ENV=production ionic-app-scripts build --prod",
+    "ionic:serve.ci": "NODE_ENV=ci ionic-app-scripts serve",
+    "ionic:serve.qa": "NODE_ENV=qa ionic-app-scripts serve",
+    "ionic:serve.prod": "NODE_ENV=production ionic-app-scripts serve",
+    "lint": "ionic-app-scripts lint"
+  },
+  "config": {
+    "ionic_source_map_type": "source-map",
+    "ionic_webpack": "./config/webpack.config.js"
   },
   "dependencies": {
     "@angular/common": "5.0.3",
@@ -44,6 +51,9 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.1.8",
+    "@types/node": "9.4.5",
+    "grunt": "1.0.2",
+    "grunt-phonegap-build": "0.0.8",
     "typescript": "2.4.2"
   },
   "description": "An Ionic project",

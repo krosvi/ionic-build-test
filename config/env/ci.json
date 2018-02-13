@@ -1,0 +1,5 @@
+{
+  "environment": "CI",
+  "appName": "Ionic Test - CI",
+  "appId": "com.rostyslav.IonicBuildTestCI"
+}
