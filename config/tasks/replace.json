@@ -1,0 +1,27 @@
+{
+  "options": {
+    "patterns": [
+      {
+        "match": "BUNDLE_IDENTIFIER",
+        "replacement": "<%= grunt.config.get('ENV.appId') %>"
+      },
+      {
+        "match": "APP_NAME",
+        "replacement": "<%= grunt.config.get('ENV.appName') %>"
+      },
+      {
+        "match": "APP_VERSION",
+        "replacement": "0.0.0.2"
+      }
+    ],
+    "force": true
+  },
+  "config": {
+    "files": [
+      {
+        "src": "./config.xml",
+        "dest": "./.tmp/config.xml"
+      }
+    ]
+  }
+}

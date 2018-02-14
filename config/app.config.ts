@@ -7,7 +7,6 @@ export class AppConfig {
   public appName: string;
 
   constructor() {
-    console.log(ENV);
     this.appName = ENV['appName'];
     this.environment = ENV['environment'];
   }

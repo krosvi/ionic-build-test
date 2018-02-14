@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.rostyslav.IonicBuildTest" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>ionic-build-test</name>
+<widget id="@@BUNDLE_IDENTIFIER" version="@@APP_VERSION" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>@@APP_NAME</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="rostyslav@email">Rostyslav</author>
     <content src="index.html" />

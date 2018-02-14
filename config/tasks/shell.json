@@ -1,0 +1,5 @@
+{
+  "ionic-build": {
+    "command": "npm run ionic:build.<%= grunt.config.get('ENV.environment') %>"
+  }
+}

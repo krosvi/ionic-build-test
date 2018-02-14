@@ -1,3 +1,5 @@
 {
-  "environment": "UAT"
+  "environment": "uat",
+  "appName": "Ionic Test (QA)",
+  "appId": "com.rostyslav.IonicBuildTestUAT"
 }

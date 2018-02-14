@@ -1,0 +1,20 @@
+{
+  "main": {
+    "options": {
+      "archive": "./dist/app_<%= grunt.config.get('ENV.environment') %>_vt.0.d.0.zip"
+    },
+    "files": [
+      {
+        "expand": true,
+        "src": [
+          "./www/**",
+          "./resources/**"
+        ]
+      },
+      {
+        "cwd": "./.tmp",
+        "src": "config.xml"
+      }
+    ]
+  }
+}
