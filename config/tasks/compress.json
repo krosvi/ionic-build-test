@@ -1,7 +1,7 @@
 {
   "main": {
     "options": {
-      "archive": "./dist/app_<%= grunt.config.get('ENV.environment') %>_v<%= grunt.config.get('VERSION') %>.zip"
+      "archive": "<%= grunt.config.get('BUNDLE.fullPath') %>"
     },
     "files": [
       {
@@ -12,7 +12,8 @@
         ]
       },
       {
-        "cwd": "./.tmp",
+        "expand": true,
+        "cwd": "./.tmp/",
         "src": "config.xml"
       }
     ]
